@@ -1,0 +1,62 @@
+El método toUpperCase() de la clase String de Java se utiliza para convertir todos los caracteres de la cadena 
+en una letra mayúscula.
+Ejemplo:
+
+public static void main(String args[]) 
+{    
+    String str = "Geeksforgeeks";
+
+    // Convertir el string anterior en letras mayusculas
+    // y guradarlas en la variable 'res'
+    String res = str.toUpperCase();
+
+    System.out.println(res);
+}
+
+
+El método putIfAbsent() escribe una entrada en el map. Si ya existe una entrada con la misma clave y su valor no 
+es null entonces el map no se modifica.
+Ejemplo:
+
+public static void main(String[] args) {
+    HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    
+    // Agrega nuevas entradas solo si no existen
+    capitalCities.putIfAbsent("Canada", "Ottawa");
+    capitalCities.putIfAbsent("England", "Cambridge");
+    
+    System.out.println(capitalCities);
+  }
+
+
+El método toLowerCase() se utiliza para convertir todas las letras a minúsculas en una cadena determinada.
+Ejemplo:
+
+public static void main(String args[]) 
+{ 
+    String s = "Geeks for Geeks"; 
+
+    // Convierte el string 's' en minusculas
+    String s2 = s.toLowerCase(); 
+
+    System.out.println(s2); 
+} 
+
+
+El método toCharArray() convierte un string en un array de caracteres
+Ejemplo:
+
+public static void main(String[] args) {
+      
+        String s = "Java";
+
+	//Convierte el string en un array de caracteres
+        char[] c = s.toCharArray();
+
+        System.out.println("" + Arrays.toString(c));
+    }
